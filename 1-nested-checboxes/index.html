@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Checboxes</title>
+</head>
+<body>
+  <div id="root">
+    <ul>
+      <li>
+        <label>
+          <input class="parent-checkbox" type="checkbox" id="parent-checkbox-1" /> Veg Toppings
+        </label>
+        <ul>
+          <li>
+            <label>
+              <input class="child-checkbox" type="checkbox" data-parent="parent-checkbox-1" /> Tomatoe
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="child-checkbox" type="checkbox" data-parent="parent-checkbox-1" /> Onion
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="child-checkbox" type="checkbox" data-parent="parent-checkbox-1" /> Mushroom
+            </label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <label>
+          <input class="parent-checkbox" type="checkbox" id="parent-checkbox-2" /> Non-Veg Toppings
+        </label>
+        <ul>
+          <li>
+            <label>
+              <input class="child-checkbox" type="checkbox" data-parent="parent-checkbox-2" /> Chicken
+            </label>
+          </li>
+          <li>
+            <label>
+              <input class="child-checkbox" type="checkbox" data-parent="parent-checkbox-2" /> Pepperoni
+            </label>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
