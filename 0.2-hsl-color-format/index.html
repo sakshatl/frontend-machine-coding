@@ -14,7 +14,6 @@
 
     :root {
       --color-primary: hsla(260, 100%, 50%);
-      --color-primary-dark: hsla(260, 100%, 30%);
       --color-primary-light: hsla(260, 100%, 98%);
     }
 
@@ -29,14 +28,10 @@
     }
 
     .box1 {
-      background-color: var(--color-primary-dark);
-    }
-
-    .box2 {
       background-color: var(--color-primary);
     }
 
-    .box3 {
+    .box2 {
       background-color: var(--color-primary-light);
     }
 
@@ -57,6 +52,7 @@
       margin-top: 16px;
       font-size: 22px;
       line-height: 32px;
+      color: var(--color-primary-dark);
     }
 
     button {
@@ -85,7 +81,6 @@
     <div class="grid-container">
       <div class="box box1"></div>
       <div class="box box2"></div>
-      <div class="box box3"></div>
     </div>
 
     <section class="section">
