@@ -8,5 +8,5 @@ We can use the CSS `display: grid` and `grid-template-columns` properties to ach
 
 Multi-column layout are essential for text heavy content such as articles, where breaking content in columns can improve readiblity and utilise space more efficiently.
 
-![multi-column-layout-image](./example.png)
+![multi-column-layout-image](https://github.com/sakshatl/frontend-machine-coding/blob/main/0.1-css-grid/2-multi-column-layout/example.png)
 
