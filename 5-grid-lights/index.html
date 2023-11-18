@@ -34,49 +34,8 @@
 
 </head>
 <body>
-  <div class="grid-container" id="grid-container">
+  <div class="grid-container" id="grid-container"></div>
 
-  </div>
-
-  <script>
-    const gridContainerElement = document.getElementById('grid-container');
-    const activatedCells = [];
-
-    function checkForDeactivateion() {
-      const isAllActivated = activatedCells.length === 9;
-      if(isAllActivated) {
-        let intervalId;
-        intervalId = setInterval(() => {
-          const cell = activatedCells.pop();
-          cell.classList.remove('activated');
-          if(!activatedCells.length) {
-            clearInterval(intervalId);
-          }
-        }, 300);
-      }
-    }
-
-    function handleActivateCell(e) {
-      const cell = e.target;
-      cell.classList.add('activated');
-      activatedCells.push(cell);
-      
-      // Check for de-activation on every click
-      checkForDeactivateion();
-    }
-
-    function renderGridsUI() {
-      for (let i = 0; i < 9; i++) {
-        const div = document.createElement('div');
-        div.classList.add('cell');
-        div.innerHTML = i + 1
-        div.addEventListener('click', handleActivateCell, { once: true });
-        gridContainerElement.appendChild(div)
-      }
-    }
-
-    renderGridsUI();
-
-  </script>
+  <script src="./app.js"></script>
 </body>
 </html>
